@@ -1,32 +1,26 @@
-// Write your solution in this file!
-// global variables
-let burgers = ['hamburger', 'cheeseburgeer'];
+// Step 1
+let burgers = ['Hamburger', 'Cheeseburger'];
 let featuredDrink = 'Strawberry Milkshake';
 
-
-//the add burger function
+// Step 2
 function addBurger() {
-    var newBurger = 'Flatbuger';
+    var newBurger = 'Flatburger';
     burgers.push(newBurger);
-
 }
+
 addBurger();
-console.log(burgers);
 
-
-//the block scope
+// Step 3
 if (true) {
-    let anothernewBurger = 'Maple Bacon Burger';
-    burgers.push(anothernewBurger);
+    let anotherNewBurger = 'Maple Bacon Burger';
+    burgers.push(anotherNewBurger);
 
-    function changefeaturedDrink(){
-        featuredDrink = 'The Javashake';
+    function changeFeaturedDrink() {
+        featuredDrink = 'The JavaShake';
     }
 
-    changefeaturedDrink();
-    console.log(featuredDrink);
-         
-
+    changeFeaturedDrink();
 }
+
 
 
